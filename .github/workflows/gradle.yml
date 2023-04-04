@@ -57,5 +57,5 @@ jobs:
         run: >
           aws deploy create-deployment --application-name be-72-yeonssu
           --deployment-config-name CodeDeployDefault.AllAtOnce
-          --deployment-group-name be-72-yeonssu
+          --deployment-group-name be-72-yeonssu-group
           --s3-location bucket=$S3_BUCKET_NAME, bundleType=zip, key=practice-deploy.zip
